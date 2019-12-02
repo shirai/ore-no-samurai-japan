@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Zi-Nk-Wc2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--選手名鑑-->
+        <scene sceneID="yMF-PM-hWZ">
+            <objects>
+                <viewController storyboardIdentifier="PlayerDirectoryBarPagerTabStripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Zi-Nk-Wc2" customClass="PlayerDirectoryBarPagerTabStripViewController" customModule="俺の侍JAPAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAU-tf-BFB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-Fn-dei">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ixn-yC-bsC" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="zq4-1H-sEG"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IY2-LJ-rQ4">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X71-ux-TC4">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="681"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="lfY-DB-kmj"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Xa7-wE-VgG"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EC2-Fn-dei" firstAttribute="trailing" secondItem="BIN-bg-xxx" secondAttribute="trailing" id="1kM-ng-oCx"/>
+                            <constraint firstItem="EC2-Fn-dei" firstAttribute="top" secondItem="BIN-bg-xxx" secondAttribute="top" id="Gpj-h6-3xZ"/>
+                            <constraint firstItem="EC2-Fn-dei" firstAttribute="bottom" secondItem="BIN-bg-xxx" secondAttribute="bottom" id="WmU-dG-Swo"/>
+                            <constraint firstItem="EC2-Fn-dei" firstAttribute="leading" secondItem="BIN-bg-xxx" secondAttribute="leading" id="d2R-lH-wSf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BIN-bg-xxx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="選手名鑑" id="cAD-KW-BOh"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="ixn-yC-bsC" id="ipy-lw-LWT"/>
+                        <outlet property="containerView" destination="X71-ux-TC4" id="ZGV-pX-Klm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGY-Kd-6pO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
+        </scene>
+    </scenes>
+</document>

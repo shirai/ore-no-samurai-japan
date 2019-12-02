@@ -1,0 +1,46 @@
+PODS:
+  - Kanna (5.0.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - Realm (4.0.0):
+    - Realm/Headers (= 4.0.0)
+  - Realm/Headers (4.0.0)
+  - RealmSwift (4.0.0):
+    - Realm (= 4.0.0)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
+  - SwiftLint (0.38.0)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - Kanna
+  - NVActivityIndicatorView
+  - RealmSwift
+  - SDWebImage
+  - SwiftLint
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  trunk:
+    - Kanna
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SwiftLint
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  Realm: 0c5b8f398daeec5b29824e41c453ff9e126e31d8
+  RealmSwift: 02e1f604f7091ec535145055764ca53efa8cdc92
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
+  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: c85955112e0cf73e5b9c4c724931abeaeb679471
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IlS-fw-yXb" kind="relationship" relationship="viewControllers" id="sHS-rR-6sA"/>
+                        <segue destination="OB7-JL-bRP" kind="relationship" relationship="viewControllers" id="kdm-qa-gdN"/>
+                        <segue destination="S9j-7C-eaE" kind="relationship" relationship="viewControllers" id="1HU-eg-ciQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="11"/>
+        </scene>
+        <!--選手名鑑-->
+        <scene sceneID="plu-V2-bnw">
+            <objects>
+                <navigationController id="IlS-fw-yXb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="選手名鑑" image="baseball_cap" id="aZU-Bh-kvP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4T7-iE-PUU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fVO-50-9AW" kind="relationship" relationship="rootViewController" id="cdI-70-3sT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDC-oG-oen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="763"/>
+        </scene>
+        <!--チーム管理-->
+        <scene sceneID="IAG-lM-TfL">
+            <objects>
+                <navigationController id="OB7-JL-bRP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="チーム管理" image="baseball_field" id="hVh-y6-qq3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8XG-Og-k2o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dX6-uS-6iL" kind="relationship" relationship="rootViewController" id="75P-v0-xuW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrq-X8-pwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="763"/>
+        </scene>
+        <!--ManagementHomeViewController-->
+        <scene sceneID="UOX-C5-nUl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ManagementHomeViewController" id="dX6-uS-6iL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="glN-RV-MTH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlk-yr-CaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="1185"/>
+        </scene>
+        <!--PlayerDirectoryBarPagerTabStripViewController-->
+        <scene sceneID="u0a-W6-SJg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerDirectoryBarPagerTabStripViewController" id="fVO-50-9AW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Sex-zL-Y8C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ri8-Ww-EkZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="1185"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="Vcx-Wz-A8u">
+            <objects>
+                <navigationController id="S9j-7C-eaE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="お気に入り" image="star_filled" id="7LB-9B-Tst"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XMf-Wn-tiY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q1P-xh-QgZ" kind="relationship" relationship="rootViewController" id="37e-OM-JmT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2W8-BC-254" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1538" y="763"/>
+        </scene>
+        <!--FavoriteHomeViewController-->
+        <scene sceneID="Uif-qu-eHB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavoriteHomeViewController" id="Q1P-xh-QgZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PL1-PJ-982"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPM-0L-izb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1538" y="1177"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseball_cap" width="39" height="39"/>
+        <image name="baseball_field" width="37.5" height="37.5"/>
+        <image name="star_filled" width="37.5" height="37.5"/>
+    </resources>
+</document>

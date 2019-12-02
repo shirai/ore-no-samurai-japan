@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--{リーグ名}-->
+        <scene sceneID="sZK-Tg-w45">
+            <objects>
+                <viewController storyboardIdentifier="RankingTopPagerTabStripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dj7-u0-Kcl" customClass="RankingTopPagerTabStripViewController" customModule="俺の侍JAPAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N4f-xO-ah2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eI8-bd-ygG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1zh-dX-Ah3" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="4Ay-Gx-hSF"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h9X-Js-B30">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHq-9x-JJo">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="681"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="LuT-nT-4DA"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Acq-HA-XgV"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eI8-bd-ygG" firstAttribute="top" secondItem="4Li-f1-3Tu" secondAttribute="top" id="J3a-1k-W6j"/>
+                            <constraint firstItem="eI8-bd-ygG" firstAttribute="bottom" secondItem="4Li-f1-3Tu" secondAttribute="bottom" id="K2g-JY-FTv"/>
+                            <constraint firstItem="eI8-bd-ygG" firstAttribute="leading" secondItem="4Li-f1-3Tu" secondAttribute="leading" id="tkb-mm-Byw"/>
+                            <constraint firstItem="eI8-bd-ygG" firstAttribute="trailing" secondItem="4Li-f1-3Tu" secondAttribute="trailing" id="vna-zO-WFr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Li-f1-3Tu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="{リーグ名}" id="Pez-sx-ZdI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="1zh-dX-Ah3" id="OkM-nk-QmU"/>
+                        <outlet property="containerView" destination="VHq-9x-JJo" id="p5w-RM-5Vj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQp-aI-Ycg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="118"/>
+        </scene>
+    </scenes>
+</document>
