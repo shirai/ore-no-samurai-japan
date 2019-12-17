@@ -7,6 +7,7 @@
 //
 
 import XLPagerTabStrip
+import SDWebImage
 
 class PositionManagementViewController: UITableViewController, IndicatorInfoProvider {
     
@@ -58,8 +59,10 @@ class PositionManagementViewController: UITableViewController, IndicatorInfoProv
             let cell = UITableViewCell(style: .value1, reuseIdentifier: identifier)
             return cell
             }()
+        
         let player = players(section: indexPath.section)[indexPath.row]
         cell.textLabel?.text = player.name
+        cell.imageView?.sd_setImage(with: player.team.imageURL)
         return cell
     }
     

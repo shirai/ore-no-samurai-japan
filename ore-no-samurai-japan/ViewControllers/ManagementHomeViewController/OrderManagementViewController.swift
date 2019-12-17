@@ -7,6 +7,7 @@
 //
 
 import XLPagerTabStrip
+import SDWebImage
 
 class OrderManagementViewController: UITableViewController, IndicatorInfoProvider {
     
@@ -15,7 +16,7 @@ class OrderManagementViewController: UITableViewController, IndicatorInfoProvide
         var headerName: String {
             switch self {
             case .order:     return "打順"
-            case .undefined: return "未定義"
+            case .undefined: return "オーダー外"
             }
         }
         
@@ -80,6 +81,7 @@ class OrderManagementViewController: UITableViewController, IndicatorInfoProvide
             return prefix + player.name
         }()
         cell.detailTextLabel?.text = player.position.positionName()
+        cell.imageView?.sd_setImage(with: player.team.imageURL)
         
         return cell
     }
@@ -95,8 +97,6 @@ class OrderManagementViewController: UITableViewController, IndicatorInfoProvide
         playerDic[Section(rawValue: sourceIndexPath.section)!]?.remove(at: sourceIndexPath.row)
         playerDic[Section(rawValue: destinationIndexPath.section)!]?.insert(player, at: destinationIndexPath.row)
         
-        // DB値を更新
-        // TODO: 岸田が打線から外れてくれないので修正する。
         for (i, player) in players(section: Section.order.rawValue).enumerated() {
             player.update(order: i + 1)
         }
