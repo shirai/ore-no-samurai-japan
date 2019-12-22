@@ -17,6 +17,7 @@
 		9B3BA28723A533780030EDA0 /* PlayerPitchingStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3BA28623A533780030EDA0 /* PlayerPitchingStats.swift */; };
 		9B62378823A51D6200E1569C /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62378723A51D6200E1569C /* Position.swift */; };
 		9B88397623A9567400C692A8 /* FavoriteHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B88397523A9567400C692A8 /* FavoriteHomeViewController.swift */; };
+		9B88397823AFA43400C692A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B88397723AFA43300C692A8 /* GoogleService-Info.plist */; };
 		9B9394D323A93D090058107C /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9394D223A93D090058107C /* ClassNameProtocol.swift */; };
 		9B9394D623A93D500058107C /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9394D523A93D500058107C /* StoryboardInstantiatable.swift */; };
 		9B9394E923A944570058107C /* PositionManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9394E823A944570058107C /* PositionManagementViewController.swift */; };
@@ -78,6 +79,7 @@
 		9B3BA28623A533780030EDA0 /* PlayerPitchingStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPitchingStats.swift; sourceTree = "<group>"; };
 		9B62378723A51D6200E1569C /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		9B88397523A9567400C692A8 /* FavoriteHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteHomeViewController.swift; sourceTree = "<group>"; };
+		9B88397723AFA43300C692A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B9394D223A93D090058107C /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
 		9B9394D523A93D500058107C /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		9B9394E823A944570058107C /* PositionManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionManagementViewController.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				C2FCD2822394DC18004D0E7D /* Assets.xcassets */,
 				C2FCD2842394DC18004D0E7D /* LaunchScreen.storyboard */,
 				C2FCD2872394DC18004D0E7D /* Info.plist */,
+				9B88397723AFA43300C692A8 /* GoogleService-Info.plist */,
 			);
 			path = "ore-no-samurai-japan";
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 			files = (
 				C2FCD2862394DC18004D0E7D /* LaunchScreen.storyboard in Resources */,
 				C2ECF5EB239930AF00089363 /* PlayerDirectoryBarPagerTabStripViewController.storyboard in Resources */,
+				9B88397823AFA43400C692A8 /* GoogleService-Info.plist in Resources */,
 				9B2C479B23A5EBB8009A13C6 /* RankingTopPagerTabStripViewController.storyboard in Resources */,
 				C2106642239E4EA900C3952B /* TeamTopPagerTabStripViewController.storyboard in Resources */,
 				9B2C47A423A71DE2009A13C6 /* FavoriteHomeViewController.storyboard in Resources */,

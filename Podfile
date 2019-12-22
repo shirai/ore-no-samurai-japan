@@ -4,6 +4,7 @@ platform :ios, '12.0'
 target 'ore-no-samurai-japan' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  pod 'Firebase/Analytics' # Analytics
   pod 'SwiftLint' # ソースコード静的チェック
   pod 'Kanna' # HTMLパーサ
   pod 'RealmSwift' # DB
