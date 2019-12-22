@@ -54,19 +54,21 @@ class FavoriteHomeViewController: UITableViewController {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         actionSheet.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)?.contentView
         
-        let deselectRowHandler = { (alertAction: UIAlertAction) in
+        let alertActionCompletionHandler = { [weak self] (alertAction: UIAlertAction) in
             tableView.deselectRow(at: indexPath, animated: true)
+            
+            self?.players = FavoritePlayer.selectAll()
         }
         
         actionSheet.addAction(
-            .createFavoriteAction(player: player, handler: deselectRowHandler))
+            .createFavoriteAction(player: player, handler: alertActionCompletionHandler))
         actionSheet.addAction(
-            .createDraftedAction(player: player, handler: deselectRowHandler))
+            .createDraftedAction(player: player, handler: alertActionCompletionHandler))
         actionSheet.addAction(
             .createPresentPlayerDetailAction(player: player,
                                              navigationController: navigationController!))
         actionSheet.addAction(
-            .createCancelAction(handler: deselectRowHandler))
+            .createCancelAction(handler: alertActionCompletionHandler))
         
         navigationController?.present(actionSheet, animated: true, completion: nil)
     }
